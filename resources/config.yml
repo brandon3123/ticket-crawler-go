@@ -1,0 +1,43 @@
+# email config
+email:
+  address: "your-gmail-app-password-email"
+  password: "your-gmail-app-password"
+  recipients:
+    - "receiver1@gmail.com"
+    - "receiver2@gmail.com"
+
+# Exchange rate api info, for converting USD -> CAD
+exchangeRate:
+  baseUrl: "https://v6.exchangerate-api.com"
+  apiKey: "exchange-rate-api-key"
+
+# Filters for your tickets
+gameFilters:
+  maxPrice: 150
+  seats: 2
+  days:
+    - "2023-12-27"
+  teams:
+    flames: true
+    wranglers: false
+  opponents:
+    - SEA # Seattle
+#   - VGK # Vegas
+#   - DAL # Seattle
+#   - VAN # Seattle
+
+# game time config
+gameTime:
+  baseUrl: "https://mobile.gametime.co"
+  buyUrl: "https://gametime.co/nhl-hockey"
+
+# fans first config
+fansFirst:
+  baseUrl: "https://api-v2.fansfirst.ca"
+  buyUrl: "https://www.fansfirst.ca/games"
+
+# I tried implementing seat geek integration, but you have to pay for "real" features
+# maybe I'll do that one day.....
+seatGeek:
+  secret: "seat-geek-secret"
+  clientId: "seat-geek-client-id"
